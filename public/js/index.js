@@ -72,11 +72,11 @@ $('body').on('touchstart', function () {
 
 var domTop = $('.fixTop');
 $('.inner').find('input').on('focus', function () {
-  domTop.css('position', 'fixed');
+  domTop.css('position', 'absolute');
   setTimeout(function () {
     domTop.css('top', 0);
   }, 300);
 });
 $('.inner').find('input').on('blur', function () {
-  domTop.css('position', 'absolute');
+  domTop.css('position', 'fixed');
 });

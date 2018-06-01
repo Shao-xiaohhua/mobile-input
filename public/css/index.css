@@ -33,7 +33,7 @@ html, body {
 }
 /*¹Ì¶¨top*/
 .fixTop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
