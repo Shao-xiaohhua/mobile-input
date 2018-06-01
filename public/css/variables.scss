@@ -1,0 +1,33 @@
+
+@mixin user($designdraft){
+  /*以下为各个主流移动设备宽度必须从大到小排列；
+  ipad pro:1024px;
+  ipad:768px;
+  iphone6+:414px;
+  iphone6:375px;
+  iphone5:320px
+  */
+  $list:2000px,1900px, 1800px,1600px,1400px,1200px,1024px,800px,768px,720px,414px,412px,384px,375px,360px,320px;
+  @each $i in $list{
+    /*12栅格系统*/
+    @media screen and (max-width:#{$i}){
+      html{
+        /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+        font-size: 100px*($i/$designdraft);
+      }
+    }
+  }
+}
+//这里输入设计稿宽度
+@include user(750px);
+
+@media (min-width: 414px ) and (max-width: 2000px ) {
+  .container-fluid {
+    height: 44px;
+  }
+}
+@media screen and (max-width: 414px ) {
+  .container-fluid {
+    height: 0.8rem;
+  }
+}

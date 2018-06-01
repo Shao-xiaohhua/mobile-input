@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>应聘信息</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="css/variables.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/jquery-weui.min.css" /> -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="fixTop">应聘信息</div>
+  <div class="warp" id="form">
+    <div class="contentWarp">
+      <div class="conWarp">
+        <p class="title">个人信息（<span class="redFont"><span class="redStart">*</span>为必填信息</span>）</p>
+        <div class="warpInner">
+          <ul class="inner">
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">身份证号：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入身份证号">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">姓名：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入姓名">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">联系电话：</label>
+              </div>
+              <div class="innerRight">
+                <input type="tel" placeholder="请输入手机号" oninput="if(value.length>11)value=value.slice(0,11); value=value.replace(/[^\d]/g,'') " >
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">年龄：</label>
+              </div>
+              <div class="innerRight">
+                <input type="tel" placeholder="请输入年龄" oninput="value=value.replace(/[^\d]/g,'') ">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">性别：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择性别">
+                <select name="" id="">
+                  <option value="男">男</option>
+                  <option value="女">女</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">民族：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入民族">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">政治面貌：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入政治面貌">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">文化程度：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择文化程度">
+                <select name="" id="">
+                  <option value="本科">本科</option>
+                  <option value="专科">专科</option>
+                  <option value="中专">中专</option>
+                  <option value="小学">小学</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">婚姻状况：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择婚姻状况">
+                <select name="" id="">
+                  <option value="未婚">未婚</option>
+                  <option value="已婚">已婚</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">户籍地址：</label>
+              </div>
+              <div class="innerRight selectZone">
+                <input type="text" class="citypicker" placeholder="省/市/区" id="cityPicker1">
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">户籍详细地址：</label>
+              </div>
+              <div class="innerRight streetDetail">
+                <input class="streetDetail" type="text" placeholder="请输入街道、门牌号等">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">邮编：</label>
+              </div>
+              <div class="innerRight">
+                <input type="tel" placeholder="请输入邮编"  oninput="value=value.replace(/[^\d]/g,'') ">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">户口性质：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择户口性质">
+                <select name="" id="">
+                  <option value="本市城镇">本市城镇</option>
+                  <option value="外地城镇">外地城镇</option>
+                  <option value="本市农业">本市农业</option>
+                  <option value="外地农业">外地农业</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">现住地址：</label>
+              </div>
+              <div class="innerRight selectZone">
+                <input type="text" class="citypicker"  placeholder="省/市/区" id="cityPicker2">
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">现住详细地址：</label>
+              </div>
+              <div class="innerRight streetDetail">
+                <input class="streetDetail" type="text" placeholder="请输入街道、门牌号等">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">邮编：</label>
+              </div>
+              <div class="innerRight">
+                <input type="tel" placeholder="请输入邮编"  oninput="value=value.replace(/[^\d]/g,'') ">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">文件送达地址：</label>
+              </div>
+              <div class="innerRight selectZone">
+                <input type="text" class="citypicker"  placeholder="省/市/区" id="cityPicker3">
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">文件送达详细地址：</label>
+              </div>
+              <div class="innerRight streetDetail">
+                <input class="" type="text" placeholder="请输入街道、门牌号等">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">人员类别：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择人员类别">
+                <select name="" id="">
+                  <option value="失业人员">失业人员</option>
+                  <option value="应届毕业生">应届毕业生</option>
+                  <option value="下岗内退协保退休人员">下岗内退协保退休人员</option>
+                  <option value="其他人员">其他人员</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">在校学生对应学校：</label>
+              </div>
+              <div class="innerRight streetDetail">
+                <input type="text" placeholder="在校学生对应学校">
+              </div>
+            </li>
+            <li class="mustFill">
+              <div class="innerLeft">
+                <span class="empStart redStart">*</span>
+                <label for="" class="formName">健康状况：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请选择健康状况">
+                <select name="" id="">
+                  <option value="良好">良好</option>
+                  <option value="一般">一般</option>
+                </select>
+                <img src="image/select.png" alt="">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">身高：</label>
+              </div>
+              <div class="innerRight">
+                <input type="tel" placeholder="cm"  oninput="value=value.replace(/[^\d]/g,'') ">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">体重：</label>
+              </div>
+              <div class="innerRight">
+                <input type="number" placeholder="kg"  oninput="value=value.replace(/[^\d.]/g,'') ">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">视力：</label>
+              </div>
+              <div class="innerRight eye">
+                <span>左眼：</span>
+                <input type="number" placeholder="请输入"  oninput="value=value.replace(/[^\d.]/g,'') " >
+                <span>右眼：</span>
+                <input type="number" placeholder="请输入"  oninput="value=value.replace(/[^\d.]/g,'') ">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <p class="title">就业经历</p>
+        <div class="warpInner">
+          <ul class="inner">
+            <li class="textarear">
+              <div class="">
+                <span class="empStart"></span>
+                <label for="" class="formName">专业技术、证书、从事年限：</label>
+              </div>
+              <div class="areaWarp">
+                <textarea name="" id="" cols="" rows="" placeholder="请输入专业技术、证书、从事年限"></textarea>
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">就业证编号：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入就业证编号">
+              </div>
+            </li>
+            <li>
+              <div class="innerLeft">
+                <span class="empStart"></span>
+                <label for="" class="formName">再就业编号：</label>
+              </div>
+              <div class="innerRight">
+                <input type="text" placeholder="请输入再就业编号">
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="btnWarp">
+          <button class="subBtn">录入</button>
+        </div>
+      </div>
+      <div class="reminder">录入成功</div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="js/jquery-weui.min.js"></script>
+  <script type="text/javascript" src="js/city-picker.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

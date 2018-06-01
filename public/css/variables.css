@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*以下为各个主流移动设备宽度必须从大到小排列；
+  ipad pro:1024px;
+  ipad:768px;
+  iphone6+:414px;
+  iphone6:375px;
+  iphone5:320px
+  */
+/*12栅格系统*/
+@media screen and (max-width: 2000px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 266.66667px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1900px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 253.33333px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1800px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 240px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1600px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 213.33333px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1400px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 186.66667px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1200px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 160px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 1024px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 136.53333px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 800px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 106.66667px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 768px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 102.4px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 720px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 96px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 414px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 55.2px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 412px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 54.93333px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 384px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 51.2px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 375px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 50px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 360px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 48px;
+  }
+}
+
+/*12栅格系统*/
+@media screen and (max-width: 320px) {
+  html {
+    /*使用rem，根据比例换算出需要的像素，6px等于.06rem*/
+    font-size: 42.66667px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 2000px) {
+  .container-fluid {
+    height: 44px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container-fluid {
+    height: 0.8rem;
+  }
+}
