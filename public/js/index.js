@@ -73,6 +73,9 @@ $('body').on('touchstart', function () {
 var domTop = $('.fixTop');
 $('.inner').find('input').on('focus', function () {
   domTop.css('position', 'fixed');
+  setTimeout(function () {
+    domTop.css('top', 0);
+  }, 300);
 });
 $('.inner').find('input').on('blur', function () {
   domTop.css('position', 'absolute');
