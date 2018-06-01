@@ -68,4 +68,12 @@ $('body').on('touchstart', function () {
   $('input').blur();
   $('select').blur();
   $('textarea').blur();
-})
+});
+
+var domTop = $('.fixTop');
+$('.inner').find('input').on('focus', function () {
+  domTop.css('position', 'fixed');
+});
+$('.inner').find('input').on('blur', function () {
+  domTop.css('position', 'absolute');
+});
